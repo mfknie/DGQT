@@ -1,0 +1,189 @@
+@charset "utf-8";
+:root {
+    --default-green: #aadf87;
+    --default-red: #f6acbd;
+    --header-height: 90px;
+    --mheader-height: 10px;
+}
+html {
+    overflow-y: scroll;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+/*Navigation/Menu*/
+#navContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+#logoContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+#logoContainer > img {
+    height: var(--header-height);
+    /*width: 15%;*/
+}
+#menuContainer{
+    display: flex;
+    background-color: var(--default-green);
+    height: var(--header-height);
+    width: 90%;
+    justify-content: space-around;
+}
+#menuContainer .menu-Button{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-size: 1.08em;
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.25s, color 0.25s; 
+    width: 15%;
+}
+#menuContainer .menu-Button:hover{
+    background-color: #3c5935;
+    color: #ffffff;
+} 
+@media screen and (max-width: 800px){
+
+}
+
+/*Rest of page misc*/
+.divide-line {
+    color: lavender;
+    background-color: lavender;
+    width: 3px;
+    height: 200px;
+}
+.title {
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    display: flex;
+    font-size: 100;
+    margin-left: 100px;
+}
+.main-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.section-header {
+    background-size: cover;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/*Mission section*/
+#mission > .section-header {
+    background-image: url("Banner-Logo/DSC_3107.jpg");
+}
+#missionText {
+    padding: 0px 30px;
+}
+
+/*Projects section*/
+#projects > .section-header{
+    background-image: url("placeholderProjectimg.jpg");
+}
+#projects > .section-header > .title{
+    color: black;
+    text-shadow: -3px 0 grey, 0 3px grey, 3px 0 grey, 0 -3px grey;
+}
+#projects .project-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.project-row .project-items{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: beige;
+    width: 250px;
+    height: 250px;
+    margin: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid salmon;
+    border-radius: 10px;
+}
+.project-row .project-items > p, .project-row .project-items > a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18;
+    font-weight: 100;
+}
+
+/*Events section*/
+#events > .section-header {
+    background-color: var(--default-red);
+}
+#calendarContainer {
+    display: flex;
+    justify-content: center;
+}
+#calendarContainer iframe {
+    padding: 3em;
+}
+
+/*Board section*/
+#board > .section-header {
+    background-image: url("old_typewriter-wallpaper-6000x2000.jpg");
+}
+#board .all-headshots {
+    margin: 30px;
+}
+#board .headshot-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+    max-height: 200px;
+}
+#board .headshot-container > .intro-text {
+    width: 700px;
+    height: 200px;
+}
+#board .headshot-container h2{
+    margin: 5px 0px;
+    font-size: 30;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', 'sans-serif';
+}
+#board .headshot-container p{
+    margin: 10px 0px;
+    max-height: 140px;
+    overflow-y: auto;
+}
+
+
+/*Contact section */
+#contact > .section-header{
+    background-color: var(--default-green);
+}
+#contact #contactContainer{
+    display: flex;
+    justify-content: center;
+}
+#contact form {
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+}
+#contact form input, #contact form textarea{
+    padding: 1em;
+    margin-bottom: 1em;
+    border-style: double;
+}
+#contact form textarea{
+    min-height: 12em;
+}
