@@ -1,6 +1,6 @@
 # Derivatives Group Quant Trading Website
 I have created a basic html document with the basic framework for the website. Everything is local right now. 
-The php that is supposed to run the contacts section requires installation of Apache or some shit idk.
+The php that is supposed to run the contacts section requires installation of actual web server.
 
 TODO list:
 * Fix mobile version of site (Need to double check that everything), replace navigation bar with dropdown menu
